@@ -1,0 +1,776 @@
+/* геобаннер */
+
+.n123GeoBanner {
+	box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;
+	color:black;
+	border:solid 1px #aaa;
+	background-color:#fff;
+	text-align:left !important;
+	overflow:hidden;
+	font:12px/1.25em Verdana, Arial, Sans-Serif; 
+}
+
+
+.n123GeoBanner a,
+.n123GeoBanner span {
+	display:block;
+	color:#964b00;
+}
+
+.n123GeoBanner a,
+.n123GeoBanner a:hover,
+.n123GeoBanner a:focus,
+.n123GeoBanner a:active {
+	color:#ad5c00;
+	border:none !important;
+	text-decoration:none !important;
+}
+
+
+/* адаптивный */
+
+/* исходный (широкий) */
+
+.n123GeoBanner.n123_responsive {
+	width:100%; height:180px;
+}
+
+
+.n123GeoBanner.n123_responsive .n123_header,
+.n123GeoBanner.n123_responsive .n123_gerb {
+	position:relative;
+}
+
+.n123GeoBanner.n123_responsive .n123_header > span {
+	position:absolute;
+	top:0; left:288px;
+	height:50px;
+	overflow:hidden;
+}
+
+.n123GeoBanner.n123_responsive .n123_header > span > span {
+	display:table-cell;
+	height:50px;
+	padding-right:25px;
+	vertical-align:middle;
+	color:#000;
+	font-size:18px;	line-height:115%;
+}
+
+.n123GeoBanner.n123_responsive .n123_gerb img {
+	display:block;
+	position:absolute;
+	left:10px; top:8px;
+	width:58px; height:58px;
+}
+
+.n123GeoBanner.n123_responsive .n123_image {
+	float:left;
+	width:178px; height:178px;
+	margin-left:80px;
+	background-size:cover; background-position: top center;
+}
+
+.n123GeoBanner.n123_responsive .n123_title {
+	box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;
+	height:110px;
+	margin:0 0 0 258px;
+	padding:53px 25px 10px 30px;
+	overflow:hidden;
+	background-image:url(../images/banner_arrow.png); background-position:calc(100% - 10px) 76px; background-repeat:no-repeat;
+	font-size:16px; line-height:115%;
+}
+
+.n123GeoBanner.n123_responsive .n123_footer {
+	height:68px;
+	margin-left:258px;
+	background-color:#646464;
+	background-image:url(../images/banner_arrow_white.png); background-position:calc(100% - 10px) 26px; background-repeat:no-repeat;	
+}
+
+.n123GeoBanner.n123_responsive .n123_footer span {
+	display:table-cell;
+	height:68px;
+	vertical-align:middle;	
+}
+
+.n123GeoBanner.n123_responsive .n123_footer .n123_icon {
+	width:90px;
+	box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;
+	padding:0 0 0 31px;
+}
+
+.n123GeoBanner.n123_responsive .n123_footer .n123_text {
+	padding-right:25px;
+	color:#fff;
+	font-size:14px; font-weight:bold;
+}
+
+
+/* поуже */
+
+.n123GeoBanner.n123_responsive.n123_medium {
+	height:240px;
+}
+
+.n123GeoBanner.n123_responsive.n123_medium .n123_image {
+	margin-left:0;
+}
+
+.n123GeoBanner.n123_responsive.n123_medium .n123_gerb img {
+	left:200px; top:12px;
+	width:48px; height:48px;
+}
+
+.n123GeoBanner.n123_responsive.n123_medium .n123_header > span {
+	left:252px; top:4px;
+	height:60px;
+}
+
+.n123GeoBanner.n123_responsive.n123_medium .n123_header > span > span {
+	height:60px;	
+}
+
+.n123GeoBanner.n123_responsive.n123_medium .n123_title {
+	height:157px;
+	margin-left:178px; padding:80px 25px 0 30px;
+	background-position:calc(100% - 10px) 140px;
+}
+
+.n123GeoBanner.n123_responsive.n123_medium .n123_footer {
+	clear:left;
+	height:60px;
+	margin-left:0;
+	background-position:calc(100% - 10px) 22px;
+}
+
+.n123GeoBanner.n123_responsive.n123_medium .n123_footer span {
+	height:60px;
+}
+
+.n123GeoBanner.n123_responsive.n123_medium .n123_footer .n123_icon {
+	width:72px;
+	padding-left:16px;
+}
+
+
+/* самый узкий */
+
+.n123GeoBanner.n123_responsive.n123_small {
+	height:360px;
+}
+
+.n123GeoBanner.n123_responsive.n123_small .n123_image {
+	width:100%;
+	margin:50px 0 0;
+	/* background-position: 10% center; */
+}
+
+.n123GeoBanner.n123_responsive.n123_small .n123_gerb img {
+	left:4px; top:2px;
+	width:46px; height:46px;
+}
+
+.n123GeoBanner.n123_responsive.n123_small .n123_header > span {
+	left:56px; top:2px;
+	height:44px;
+}
+
+.n123GeoBanner.n123_responsive.n123_small .n123_header > span > span {
+	height:44px;
+}
+
+.n123GeoBanner.n123_responsive.n123_small .n123_header.n123_small > span > span {
+	font-size:16px;
+}
+
+.n123GeoBanner.n123_responsive.n123_small .n123_title {
+	clear:left;
+	height:50px;
+	margin:0 0 16px; padding:14px 25px 0 15px;
+	background-position:calc(100% - 10px) 32px;
+}
+
+.n123GeoBanner.n123_responsive.n123_small .n123_footer {
+	clear:left;
+	height:64px;
+	margin-left:0;
+	background-position:calc(100% - 10px) 24px;
+}
+
+.n123GeoBanner.n123_responsive.n123_small .n123_footer .n123_icon {
+	width:68px;
+	padding-left:12px;
+}
+
+.n123GeoBanner.n123_responsive.n123_small .n123_footer span {
+	height:64px;
+}
+
+
+/* 240x400 */
+
+.n123GeoBanner.n123_240x400 {
+	width:240px; height:400px;
+}
+
+.n123GeoBanner.n123_240x400 .n123_header {
+	height:67px;
+	vertical-align:middle;
+}
+
+.n123GeoBanner.n123_240x400 .n123_header img {
+	display:inline-block;
+	width:45px; height:45px;
+}
+
+.n123GeoBanner.n123_240x400 .n123_header span {
+	display:table-cell;
+	height:67px;
+	vertical-align:middle;
+}
+
+.n123GeoBanner.n123_240x400 .n123_header .n123_gerb{
+	width:60px;
+	text-align:center;
+}
+
+.n123GeoBanner.n123_240x400 .n123_header .n123_text {
+	color:#000;
+	font-size:18px;
+	line-height:110%;
+	overflow:hidden;
+}
+
+.n123GeoBanner.n123_240x400 .n123_header .n123_text.n123_small {
+	font-size:16px;		
+}
+
+.n123GeoBanner.n123_240x400 .n123_header .n123_text small {
+	font-size:16px;	
+}
+
+.n123GeoBanner.n123_240x400 .n123_image {
+	height:175px;
+	overflow:hidden;
+}
+
+.n123GeoBanner.n123_240x400 .n123_image span {
+	height:175px;
+	background-size: cover;
+	background-position: top center;
+}
+
+.n123GeoBanner.n123_240x400 .n123_title {
+	height:87px;
+	box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;
+	padding:10px 18px 10px 12px;
+	background-image:url(../images/banner_arrow.png); background-position:222px 61px; background-repeat:no-repeat;
+	font-size:14px; font-weight:bold; line-height:115%;
+}
+
+.n123GeoBanner.n123_240x400 .n123_title span {
+	overflow:hidden; 
+	height:65px;
+}
+
+
+/* .n123GeoBanner.n123_240x400 a.n123_title:hover {
+	text-decoration:underline;
+}*/
+
+.n123GeoBanner.n123_240x400 .n123_footer {
+	height:69px;
+	background-color:#646464;
+	background-image:url(../images/banner_arrow_white.png); background-position:222px 42px; background-repeat:no-repeat;
+}
+
+/*.n123GeoBanner.n123_240x400 a.n123_footer:hover .n123_right  {
+	text-decoration:underline;
+}*/
+
+.n123GeoBanner.n123_240x400 .n123_footer span {
+	display:table-cell;
+	height:69px;
+	vertical-align:middle;	
+}
+
+.n123GeoBanner.n123_240x400 .n123_footer .n123_icon {
+	width:80px;
+	box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;
+	padding:1px 0 0 20px;
+}
+
+
+.n123GeoBanner.n123_240x400 .n123_footer .n123_text {
+	color:#fff;
+	font-size:12px; font-weight:bold;
+}
+
+
+/* 336x280 */
+
+.n123GeoBanner.n123_336x280 {
+	width:336px; height:280px;
+}
+
+@media (max-width:335px) {
+	.n123GeoBanner.n123_336x280 {
+		width:100%;
+	}
+}
+
+.n123GeoBanner.n123_336x280 .n123_header {
+	height:40px;
+}
+
+.n123GeoBanner.n123_336x280 .n123_header .n123_gerb {
+	float:left;
+	width:50px;
+}
+
+.n123GeoBanner.n123_336x280 .n123_header img {
+	display:block;
+	width:32px; height:32px;
+	margin:5px 0 0 7px;
+}
+
+.n123GeoBanner.n123_336x280 .n123_header .n123_text {
+	display:table-cell;
+	height:40px;
+	padding:0;
+	color:#000;
+	vertical-align:middle;
+	font-size:16px;
+}
+
+.n123GeoBanner.n123_336x280 .n123_header .n123_text.n123_small {
+	font-size:15px;
+}
+
+.n123GeoBanner.n123_336x280 .n123_image {
+	height:194px;
+	overflow:hidden;
+}
+
+.n123GeoBanner.n123_336x280 .n123_image span {
+	height:194px;
+	background-size: cover;
+	background-position: top center;
+}
+
+.n123GeoBanner.n123_336x280 .n123_title {
+	box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;
+	height:40px;
+	padding:6px 24px 0 12px;
+	background-image:url(../images/banner_arrow.png); background-position:right 10px top 14px; background-repeat:no-repeat;
+	font-size:14px; font-weight:bold; line-height:115%;
+}
+
+.n123GeoBanner.n123_336x280 .n123_title span {
+	overflow:hidden; 
+	height:33px;
+}
+
+.n123GeoBanner.n123_336x280.n123_mobile {
+	width:100%;
+	max-width:336px; min-width:320px;
+}
+
+/* 160x600 */
+
+.n123GeoBanner.n123_160x600 {
+	width:160px; height:600px;
+}
+
+.n123GeoBanner.n123_160x600 .n123_header {
+	height:127px;
+	overflow:hidden;
+}
+
+.n123GeoBanner.n123_160x600 .n123_header img {
+	display:block;
+	width:58px; height:58px;
+}
+
+.n123GeoBanner.n123_160x600 .n123_header span {
+}
+
+.n123GeoBanner.n123_160x600 .n123_header .n123_gerb{
+	margin:4px 0 0 4px;
+}
+
+.n123GeoBanner.n123_160x600 .n123_header .n123_text {
+	display:table-cell;
+	height:56px;
+	padding-left:12px;
+	color:#000;
+	font-size:16px;
+	line-height:125%;
+	vertical-align:middle;
+}
+
+.n123GeoBanner.n123_160x600 .n123_header .n123_text.n123_small {
+	font-size:15px;
+}
+
+.n123GeoBanner.n123_160x600 .n123_header .n123_text small {
+	font-size:15px;	
+}
+
+.n123GeoBanner.n123_160x600 .n123_image {
+	height:158px;
+	overflow:hidden;
+}
+
+.n123GeoBanner.n123_160x600 .n123_image span {
+	height:158px;
+	background-size: cover;
+	background-position: top center;
+}
+
+.n123GeoBanner.n123_160x600 .n123_title {
+	height:164px;
+	box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;
+	padding:14px 12px;
+	background-image:url(../images/banner_arrow.png); background-position:138px 134px; background-repeat:no-repeat;
+	font-size:14px; font-weight:bold; line-height:115%;
+}
+
+.n123GeoBanner.n123_160x600 .n123_title span {
+	overflow:hidden; 
+	height:113px;
+}
+
+.n123GeoBanner.n123_160x600 .n123_footer {
+	box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;
+	height:149px;
+	padding:16px 2px 0 14px;
+	background-color:#646464;
+	background-image:url(../images/banner_arrow_white.png); background-position:138px 117px; background-repeat:no-repeat;
+}
+
+.n123GeoBanner.n123_160x600 .n123_footer span {
+}
+
+.n123GeoBanner.n123_160x600 .n123_footer .n123_icon {
+}
+
+
+.n123GeoBanner.n123_160x600 .n123_footer .n123_text {
+	margin-top:10px;
+	color:#fff;
+	font-size:12px; font-weight:bold;
+}
+
+
+
+/* 930x180 */
+
+.n123GeoBanner.n123_930x180 {
+	width:930px; height:180px;
+}
+
+.n123GeoBanner.n123_930x180 .n123_gerb {
+	display:block;
+	float:left;
+	width:54px; height:54px;
+	margin:9px 11px 0 11px;
+}
+
+.n123GeoBanner.n123_930x180 .n123_image {
+	float:left;
+	height:178px; width:178px;
+	overflow:hidden;
+}
+
+.n123GeoBanner.n123_930x180 .n123_image span {
+	height:178px; width:178px; 
+	background-size: cover;
+	background-position: top center;
+}
+
+.n123GeoBanner.n123_930x180 .n123_main {
+	height:112px;
+	overflow:hidden;
+	background-image:url(../images/banner_arrow.png); background-position:656px 76px; background-repeat:no-repeat;
+}
+
+.n123GeoBanner.n123_930x180 .n123_main .n123_top {
+	margin:0 30px 0 32px; padding-top:20px;
+	color:#000;
+	font-size:20px;
+}
+
+.n123GeoBanner.n123_930x180 .n123_main .n123_bottom {
+	height:38px;
+	overflow:hidden;
+	margin:16px 30px 0 32px;
+	font-size:16px; line-height:115%;
+}
+
+.n123GeoBanner.n123_930x180 .n123_footer {
+	height:67px;
+	margin-left:200px;
+	background-color:#646464;
+	background-image:url(../images/banner_arrow_white.png); background-position:710px 26px; background-repeat:no-repeat;	
+}
+
+.n123GeoBanner.n123_930x180 .n123_footer span {
+	display:table-cell;
+	height:69px;
+	vertical-align:middle;	
+}
+
+.n123GeoBanner.n123_930x180 .n123_footer .n123_icon {
+	width:90px;
+	box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;
+	padding:0 0 0 31px;
+}
+
+
+.n123GeoBanner.n123_930x180 .n123_footer .n123_text {
+	color:#fff;
+	font-size:14px; font-weight:bold;
+}
+
+
+
+/* 728x90 */
+
+.n123GeoBanner.n123_728x90 {
+	width:728px; height:90px;
+}
+
+.n123GeoBanner.n123_728x90 .n123_gerb {
+	display:block;
+	float:left;
+	width:48px; height:48px;
+	margin:6px 8px 0 8px;
+}
+
+.n123GeoBanner.n123_728x90 .n123_image {
+	float:left;
+	height:88px; width:88px;
+	overflow:hidden;
+}
+
+.n123GeoBanner.n123_728x90 .n123_image span {
+	height:88px; width:88px; 
+	background-size: cover;
+	background-position: top center;
+}
+
+.n123GeoBanner.n123_728x90 .n123_main {
+	float:left;
+	box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;
+	width:406px; height:88px;
+	padding-left:16px;
+	background-image:url(../images/banner_arrow.png); background-position:386px 62px; background-repeat:no-repeat;
+}
+
+.n123GeoBanner.n123_728x90 .n123_main .n123_top {
+	margin:12px 2px 0 0;
+	height:18px;
+	overflow:hidden;
+	color:#000;
+	font-size:16px;
+}
+
+.n123GeoBanner.n123_728x90 .n123_main .n123_bottom {
+	height:38px;
+	overflow:hidden;
+	margin:6px 30px 0 0;
+	font-size:14px; line-height:120%;
+}
+
+.n123GeoBanner.n123_728x90 .n123_footer {
+	display:table-cell;
+	width:142px; height:88px;
+	padding:0 10px 0 16px;
+	background-color:#646464;
+	background-image:url(../images/banner_arrow_white.png); background-position:150px 62px; background-repeat:no-repeat;
+	vertical-align:middle;
+}
+
+.n123GeoBanner.n123_728x90 .n123_footer span {
+}
+
+.n123GeoBanner.n123_728x90 .n123_footer .n123_icon {
+	display:none;
+}
+
+.n123GeoBanner.n123_728x90 .n123_footer .n123_text {
+	color:#fff;
+	font-size:12px; font-weight:bold;
+}
+
+
+
+/* тизер */
+
+.n123Teaser {
+	margin: 20px 0;
+}
+
+.n123Teaser .n123_item {
+	float:left;
+	width: 50%;
+	box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;
+	margin:10px 0;
+	padding-right:20px;
+}
+
+.n123Teaser .n123_item .n123_left {
+	display:block;
+	float:left;
+	width:100px; height:100px;
+}
+
+.n123Teaser .n123_item .n123_left > span {
+	display:block;
+	width:100px; height:100px;
+	overflow:hidden;
+}
+
+.n123Teaser .n123_item .n123_left > span > span {
+	display:block;
+	width:100px; height:100px;
+	background-size:cover; background-position:top center;	
+}
+
+.n123Teaser .n123_item .n123_right {
+	margin-left:110px;
+	font-size:14px;
+}
+
+
+/* боковой тизер */
+
+.n123TeaserVert {
+	width:138px;
+	margin:0 0 20px; padding:20px 10px 25px;
+	position:relative; left:-2px;
+	border:solid 1px #bbb;
+	text-align:center;
+}
+
+.n123TeaserVert a, .n123TeaserVert a:hover, .n123TeaserVert a:focus, .n123TeaserVert a:active {
+	color:#000 !important;
+	text-decoration:none !important;
+}
+
+.n123TeaserVert .n123_item {
+	margin-top:25px;
+}
+
+.n123TeaserVert .n123_item:first-child {
+	margin-top:0;
+}
+
+.n123TeaserVert .n123_item .n123_top {
+	display:block;
+	width:90px; height:90px;
+	margin:0 auto;
+}
+
+.n123TeaserVert .n123_item .n123_top > span {
+	display:block;
+	width:90px; height:90px;
+	overflow:hidden;
+}
+
+.n123TeaserVert .n123_item .n123_top > span > span {
+	display:block;
+	width:90px; height:90px;
+	background-size:cover; background-position:top center;	
+}
+
+.n123TeaserVert .n123_item .n123_bottom {
+	display:block;	
+	margin-top:3px;
+}
+
+
+/* мобильный тизер */
+
+.n123MobileTeaser {
+	margin:20px 15px 30px;
+}
+
+.n123MobileTeaser .n123_item {
+	float:left;
+	margin-right:25px;
+	width:calc((100% - 75px) / 3);
+}
+
+.n123MobileTeaser .n123_item:nth-last-child(2) {
+	margin-right:0;
+}
+
+.n123MobileTeaser .n123_left {
+	display:block;
+	float:left;
+	width:45%;
+}
+
+.n123MobileTeaser .n123_left > span {
+	display:block;
+}
+
+.n123MobileTeaser .n123_left > span > span {
+	display:block;
+	width:100%;
+	padding-top:100%;
+	background-size:cover; background-position:center center;
+}
+
+.n123MobileTeaser .n123_right {
+	font-size:16px;
+	margin-left:calc(45% + 15px);
+	line-height:140%;
+}
+
+@media(min-width:1280px) {
+	
+	.n123MobileTeaser .n123_left {
+		width:176px;
+	}
+	
+	.n123MobileTeaser .n123_right  {
+		margin-left:calc(176px + 15px);		
+	}
+}
+
+
+@media(max-width:1000px) {
+	
+	.n123MobileTeaser .n123_item {
+		float:none; clear:both;
+		width:100%; min-height:150px;
+		margin-right:0; margin-bottom:10px;
+	}
+	
+	.n123MobileTeaser .n123_left  {
+		width:150px;
+	}
+	
+	.n123MobileTeaser .n123_right {
+		margin-left:calc(150px + 15px);	margin-bottom:20px;	
+	}
+}
+
+@media(max-width:359px) {
+	.n123MobileTeaser .n123_item {
+		min-height:120px;
+	}
+	
+	.n123MobileTeaser .n123_left  {
+		width:120px;
+	}
+	
+	.n123MobileTeaser .n123_right {
+		margin-left:calc(120px + 15px);
+		font-size:14px;		
+	}
+}

@@ -1,0 +1,91 @@
+var sportsweekBannerScript = sportsweekBannerScript || {};
+
+if (sportsweekBannerScript.loaded === undefined)
+{
+	sportsweekBannerScript.loaded = true;
+	
+	$(function() {
+		
+		var nodeCode = 'sportsweek';
+		var $bannerContainers = $('.' + nodeCode + 'Banner');
+		var $teaserContainers = $('.' + nodeCode + 'Teaser');
+		
+		function getContentLang()
+		{
+			return $('input[name="contentLang"]').val()
+				||  $('html').attr('lang');
+		}
+		
+		function loadCss(url)
+		{
+			if (document.createStyleSheet)
+			{
+				try { document.createStyleSheet(url); } catch (e) { }
+			}
+			else
+			{
+				$('head').append('<link rel="stylesheet" type="text/css" href="%27%20%2B%20url%20%2B%20%27.html">');
+			}
+		}
+		
+		function setupBanners()
+		{
+			$bannerContainers.each(function() {
+				var $container = $(this);
+				var containerWidth = $container.width();
+				$container.removeClass('nd_small nd_medium');
+				if (containerWidth < 430)
+					$container.addClass('nd_small');
+				else if (containerWidth < 700)
+					$container.addClass('nd_medium');
+			});
+		}
+		
+		if ($bannerContainers.length > 0 || $teaserContainers.length > 0)
+		{
+			loadCss('./plugins/s29_nodes/skins/sportsweek/banner.css');
+			$.get(
+				
+				'https://sportsweek.org//_ajax/getbanners/',
+				{
+					bannercount: $bannerContainers.length,
+					teasercount: $teaserContainers.length,
+					contentlang: getContentLang()
+				},
+				
+				function(data) {
+					
+					var bannersCode = data.match(/\{banners\_begin\}([^]*)\{banners\_end\}/);
+					if (bannersCode && bannersCode[1])
+					{
+						var banners = bannersCode[1].split('{--}');
+						for (var i = 0; i < banners.length; i++)
+							$($bannerContainers[i]).html(banners[i]);
+					}
+					
+					var teasersCode = data.match(/\{teasers\_begin\}([^]*)\{teasers\_end\}/);
+					if (teasersCode && teasersCode[1])
+					{
+						var movingClasses = ['s29_common', 's29_vert', 's29_mobile'];
+						var teasers= teasersCode[1].split('{--}');
+						for (var i = 0; i < teasers.length; i++)
+						{
+							var $teaserContainer = $($teaserContainers[i]);
+							$teaserContainer.html(teasers[i]);
+							for (var j = 0; j < movingClasses.length; j++)
+							{
+								if ($teaserContainer.hasClass(movingClasses[j]))
+									$teaserContainer.children('.s29Teaser').addClass(movingClasses[j]);
+							}
+						}
+					}
+				}
+				
+			);
+		}
+		
+		$(window).resize(setupBanners);
+		setupBanners();
+		
+	});
+}

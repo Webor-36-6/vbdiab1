@@ -1,0 +1,110 @@
+
+#scBanner {
+	font:14px/1.25em Verdana, Arial, Sans-Serif; 
+	color:black;
+}
+
+#scBanner a:link, a:visited  { color:#964b00; text-decoration:none; }
+#scBanner a:hover, a:focus, a:active { color:#ad5c00; text-decoration:none; }
+#scBanner a:focus { outline:none; }
+
+
+#scBanner .s29Thumbs {
+	margin:0 10px; padding:0;
+	border:solid 1px #c0c0c0;
+/* 	background:#dbdbdb; */
+	list-style:none;
+}
+
+#scBanner .s29Thumbs li {
+	margin:0; padding:0;
+/*	background:#ede5da; */
+	border:solid 1px #c0c0c0;
+}
+
+#scBanner .s29Thumbs a {
+	display:block;
+	background-color:#f7f7f7;
+/*	color:#000 !important; */
+}
+
+#scBanner .s29Thumbs span {
+	display:block;
+}
+
+#scBanner .s29Thumbs.s29_small li {
+	box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;
+}
+
+#scBanner .s29Thumbs.s29_small a {
+	padding:3% 4%;
+}
+
+
+#scBanner .s29Thumbs.s29_small .s29_img {
+	float:left;
+	position:relative;
+	width:32%;
+	padding-top:24%; margin-right:18px;
+	overflow:hidden;
+	border:solid 1px #c89d7b;	
+}
+
+#scBanner .s29Thumbs.s29_small li img {
+	display:block;
+	position:absolute;
+	top:0;
+	width:100%;
+}
+
+#scBanner .s29Thumbs.s29_small .s29_title {
+	height:20px;
+	margin-bottom:3px; padding-top:3px;
+	font-size:14px; font-weight:bold;
+	overflow:hidden;	
+}
+
+#scBanner .s29Thumbs.s29_small li .s29_desc {
+	height:55px;
+	margin-right:25px;
+	font-size:12px;
+	overflow:hidden;
+	color:#000 !important;
+}
+
+@media (min-width:420px) {
+	#scBanner .s29Thumbs.s29_small a {
+		padding:8px 18px;
+	}
+	
+	#scBanner .s29Thumbs.s29_small .s29_img {
+		width:120px;
+		padding-top:90px;
+	}
+}
+
+@media (min-width:720px) {
+	#scBanner .s29Thumbs.s29_small.s29_twoCols li {
+		float:left;
+		width:50%;
+	}
+}
+
+#scBanner .s29Thumbs .s29_info {
+	position:relative;
+	width:100%;
+}
+
+#scBanner .s29Thumbs .s29_info div {
+	position:absolute;
+	bottom:0; right:0;
+	width:31px; height:31px;
+	border:solid 1px #c0c0c0;
+}
+
+#scBanner .s29Thumbs .s29_info a {
+	display:block;
+	width:31px; height:31px;
+	padding:0; 
+	background:url(../images/thumbinfo.png) center center no-repeat; 
+}

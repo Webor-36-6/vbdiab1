@@ -1,0 +1,177 @@
+
+.s29Calendar {
+	width:636px;
+	font-size:14px;
+}
+
+.s29Calendar nav {
+	margin-bottom:30px;
+}
+
+.s29Calendar h3 {
+	margin:23px 0;
+	font-size:20px;
+}
+
+.s29Calendar > section, .s29Calendar > div {
+	float:left;
+	width:182px; min-height: 0; /* 155 px */
+	margin-right:30px;
+}
+
+.s29Calendar > section {
+	margin-bottom:30px;
+}
+
+.s29Calendar > div {
+	margin-bottom:1px;
+}
+
+.s29Calendar h4 {
+	margin:0 0 10px 0 !important;
+	font-size:16px; font-weight:normal;
+	letter-spacing:normal;
+}
+
+.s29Calendar > section > div {
+	float:left;
+	width:26px;
+	margin-bottom:6px;
+	color:#b0b0b0;
+	text-align:right;
+}
+
+
+#s29MiniCalendar {
+	width:210px;
+	font-size:14px;
+}
+
+#s29MiniCalendar.s29_filled {
+	padding:30px 30px 30px 0;
+	background:#f7eecf;
+}
+
+#s29MiniCalendar button {
+	margin:0; padding:0;
+	border:none;
+}
+
+#s29MiniCalendar header {
+	float:right;
+	font-size:13px; font-weight:bold;
+	text-align:right;
+}
+
+#s29MiniCalendar header div,
+#s29MiniCalendar header button {
+	float:left;
+}
+
+#s29MiniCalendar header > div > div:first-child {
+	margin-right:6px;
+}
+
+#s29MiniCalendar header .s29_year {
+	margin-left:9px;
+}
+
+#s29MiniCalendar header button {
+	display:block;
+	width:15px; height:18px;
+	background-position:0 0;
+}
+
+#s29MiniCalendar header button.s29_prev {	
+	background-image:url(../images/ym_prev.png);
+}
+
+#s29MiniCalendar header button.s29_next {	
+	background-image:url(../images/ym_next.png);
+}
+
+#s29MiniCalendar header button:disabled {
+	background-position:0 -18px;
+}
+
+#s29MiniCalendar header .s29_seprt {
+	display:block;
+	width:1px; height:18px;
+	background-color:#765b39;
+}
+
+#s29MiniCalendar header div.s29_seprt.s29_inactive {
+	background-color:#808080;
+}
+
+#s29MiniCalendar .s29_body {
+	float:right;
+	width:182px;
+	margin:10px -3px 10px 0;
+}
+
+#s29MiniCalendar .s29_body div {
+	float:left;
+	width:20px; height:17px;
+	padding:2px 4px 2px 2px;
+	color:#b0b0b0;
+	text-align:right; line-height:14px;
+}
+
+
+#s29MiniCalendar .s29_body div.s29_current {
+	padding:0 2px 0 0;
+	border:solid 2px #ff5959;
+}
+
+#s29MiniCalendar footer {
+	float:right;
+	margin-top:5px;
+}
+
+#s29MiniCalendar footer a,
+#s29MiniCalendar footer div {
+	float:left;
+}
+
+#s29MiniCalendar footer a {
+	display:block;
+}
+
+#s29MiniCalendar footer .s29_prev, #s29MiniCalendar footer .s29_next {
+	width:87px; height:15px;
+	background-position:0 0;
+}
+
+#s29MiniCalendar footer .s29_prev {
+	background-image:url(../images/day_prev.png);
+}
+
+#s29MiniCalendar footer .s29_next {
+	background-image:url(../images/day_next.png);
+}
+
+#s29MiniCalendar footer div.s29_prev, #s29MiniCalendar footer div.s29_next {
+	background-position:0 -15px;
+}
+
+#s29MiniCalendar footer .s29_seprt {
+	width:1px; height:15px;
+	background-color:#765b39;	
+}
+
+#s29MiniCalendar footer .s29_seprt.inactive {
+	background-color:#808080;	
+}
+
+#s29MiniCalendar .s29_ajax {
+	position:relative;
+	clear:both; float:right;
+}
+
+#s29MiniCalendar .s29_ajax div {
+	display:none;
+	position:absolute;
+	width:32px; height:32px;
+	background:url(../images/spinner_bigger.gif);
+}

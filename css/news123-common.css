@@ -1,0 +1,205 @@
+
+.n123Relative {
+	position:relative;
+}
+
+
+.n123Button {
+	display:block;
+	box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;
+	height:38px;
+	padding-top:10px;
+	background-image:url(../images/btn-brwn-bg-38.png); background-position:0 0;
+	border:solid 1px #765b39; border-radius:4px;
+	color:#765b39 !important;
+	font-size:13px; font-weight:bold; text-decoration:none !important; text-align:center;
+}
+
+.n123Button.n123_inactive {
+	background-position:0 -38px;
+	border-color:#959595;
+	color:#a4a4a4;
+	cursor:default;
+}
+
+/* header */
+
+body > header {
+	background:#f2e9e1;
+	border-bottom:#cdbeae solid 1px;
+}
+
+
+body > header h1,
+body > header big{
+	display:block;
+	font-weight:normal; letter-spacing:normal;
+}
+
+
+/* City info */
+
+#n123CityInfo, #n123CityInfoExpand {
+	background-color:#fbdad0;
+}
+
+#n123CityInfo .n123_screenshot {
+	display:block;
+	width:180px; height:135px;
+	margin-bottom:15px;
+	border:#994c00 solid 1px;
+}
+
+#n123CityInfo > .n123_screenshot.n123_inactive {
+	border-color:#959595;
+}
+
+#n123CityInfo .n123Button {
+	padding-top:5px;
+}
+
+#n123CityInfo .n123Button span {
+	position:relative;
+	top:-10px;
+	width:17px; height:28px;
+	margin-left:6px;
+}
+
+/*
+#n123CityInfo .n123Button * {
+	position:relative;
+	left:-2px;
+}
+*/
+
+#n123MainNews, #n123MainNewsExpand {
+	background-color:#f0f0f0;
+}
+
+
+/* Календарь */
+
+#n123Calendar, #n123CalendarExpand {
+	background-color:#f7eecf;
+}
+
+
+/* Читайте также */
+
+#n123ReadAlso {
+	display:table;
+	margin:10px 0 15px; padding:0;
+	list-style:none;
+}
+
+#n123ReadAlso li {
+	display:table-row;
+}
+
+#n123ReadAlso li time {
+	display:table-cell;
+	padding-right:10px;
+	text-align:right; vertical-align:top;
+}
+
+#n123ReadAlso li .n123_right {
+	display:table-cell;
+	padding-bottom:10px;
+	vertical-align:top;
+}
+
+#n123ReadAlso li:last-child .n123_right {
+	padding-bottom:0;
+}
+
+
+/* Другие разделы */
+
+#n123OtherSections .n123_item {
+	float:left;
+	width:calc((100% - 28px * 3) / 4);
+	margin-right:28px;
+}
+
+#n123OtherSections .n123_item:last-child {
+	margin-right:0;
+}
+
+#n123OtherSections .n123_item h3 {
+	height:18px;
+	margin:0 0 8px;
+	color:#000;
+	overflow:hidden;
+	font-size:14px; font-weight:bold; letter-spacing:normal;
+}
+
+#n123OtherSections .n123_item h3 a {
+	color:#000 !important;
+	text-decoration:none !important;
+}
+
+#n123OtherSections .n123_item h3 a:hover, #n123OtherSections .n123_item h3 a:active, #n123OtherSections .n123_item h3 a:focus {
+	border-bottom:1px solid #000;
+}
+
+#n123OtherSections .n123_item a {
+	text-decoration:none !important;
+}
+
+#n123OtherSections .n123_item .n123_image {
+	margin-bottom:5px;
+	display:block;
+	width:100%; padding-top:67%;
+	background-size:cover; background-position:center center;
+}
+
+#n123OtherSections .n123_item .n123_title {
+	font-weight:bold;
+	line-height:120%;
+}
+
+#n123OtherSections .n123_item a:hover .n123_title {
+	border-bottom:1px solid #ad5c00;
+}
+
+
+/* прочее */
+
+a.n123GeoCity {
+	color:#bb0000;
+	text-decoration:none !important;
+}
+
+a.n123GeoCity > span, a.n123GeoCity:hover > span, a.n123GeoCity:active > span, a.n123GeoCity:focus > span {
+	text-decoration:underline;
+}
+
+
+/* 4 pics gallery (for articles)
+   <img...> must go in single line without spaces */
+
+.n123FourPics img {
+	display:inline-block;
+	width:calc((100% - 36px) / 4);
+	margin:0 12px 0 0 !important;
+}
+.n123FourPics img:last-child {
+	margin-right:0 !important;
+}
+
+.n123FourPics {
+	margin:30px 0;
+}
+
+.s29_mobile .n123FourPics {
+	margin:15px auto; 
+	max-width:1000px;
+}
+
+@media (max-width:600px) {
+	.s29_mobile .n123FourPics img {
+		display:block;
+		width:100%; height:auto;
+		margin:15px 0 !important;
+	}
+}

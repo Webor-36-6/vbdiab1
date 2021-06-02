@@ -1,0 +1,315 @@
+
+/* teasers */
+
+.n123Teaser {
+	margin: 20px 0;
+}
+
+.s29Teaser.s29_common .s29_item {
+	float:left;
+	width: 50%;
+	box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;
+	margin:10px 0;
+	padding-right:20px;
+}
+
+.s29Teaser.s29_common .s29_item .s29_image {
+	display:block;
+	float:left;
+	width:100px; height:100px;
+}
+
+.s29Teaser.s29_common .s29_item .s29_image > span {
+	display:block;
+	width:100px; height:100px;
+	overflow:hidden;
+}
+
+.s29Teaser.s29_common .s29_item .s29_image > span > span {
+	display:block;
+	width:100px; height:100px;
+	background-size:cover; background-position:top center;	
+}
+
+.s29Teaser.s29_common .s29_item .s29_title {
+	margin-left:110px;
+	font-size:14px;
+}
+
+
+/* вертикальный тизер (традиционный) */
+
+.s29Teaser.s29_vert {
+	width:138px;
+	margin:0 0 20px; padding:20px 10px 25px;
+	position:relative; left:-2px;
+	border:solid 1px #bbb;
+	text-align:center;
+}
+
+.s29Teaser.s29_vert a, .s29Teaser.s29_vert a:hover, .s29Teaser.s29_vert a:focus, .s29Teaser.s29_vert a:active {
+	color:#000 !important;
+	text-decoration:none !important;
+}
+
+.s29Teaser.s29_vert .s29_item {
+	margin-top:25px;
+}
+
+.s29Teaser.s29_vert .s29_item:first-child {
+	margin-top:0;
+}
+
+.s29Teaser.s29_vert .s29_item .s29_image {
+	display:block;
+	width:90px; height:90px;
+	margin:0 auto;
+}
+
+.s29Teaser.s29_vert .s29_item .s29_image > span {
+	display:block;
+	width:90px; height:90px;
+	overflow:hidden;
+}
+
+.s29Teaser.s29_vert .s29_item .s29_image > span > span {
+	display:block;
+	width:90px; height:90px;
+	background-size:cover; background-position:top center;	
+}
+
+.s29Teaser.s29_vert .s29_item .s29_title {
+	display:block;	
+	margin-top:3px;
+}
+
+
+/* вертикальный тизер (новый) */
+
+.s29TeaserVert {
+	width:160px;
+	margin:0 0 20px;
+}
+
+.s29TeaserVert .s29_item {
+	margin-bottom:18px;	
+}
+
+.s29TeaserVert a {
+	text-decoration:none !important;
+}
+
+.s29TeaserVert a .s29_img {
+	display:block;
+	width:100%; padding-top:63%;
+	margin-bottom:2px;
+	background-size:cover; background-position:50% 45%;
+}
+
+.s29TeaserVert a .s29_title {
+	color:#000 !important;
+	font-size:11px; font-weight:bold;
+}
+
+.s29TeaserVert a:hover .s29_title {
+	border-bottom:1px solid #000; /* #ad5c00 */
+}
+
+
+/* мобильный тизер */
+
+.s29Teaser.s29_mobile {
+	margin:20px 15px 30px;
+}
+
+.s29Teaser.s29_mobile .s29_item {
+	float:left;
+	margin-right:25px;
+	width:calc((100% - 75px) / 3);
+}
+
+.s29Teaser.s29_mobile .s29_item:nth-last-child(2) {
+	margin-right:0;
+}
+
+.s29Teaser.s29_mobile .s29_image {
+	display:block;
+	float:left;
+	width:45%;
+}
+
+.s29Teaser.s29_mobile .s29_image > span {
+	display:block;
+}
+
+.s29Teaser.s29_mobile .s29_image > span > span {
+	display:block;
+	width:100%;
+	padding-top:100%;
+	background-size:cover; background-position:center center;
+}
+
+.s29Teaser.s29_mobile .s29_title {
+	font-size:16px;
+	margin-left:calc(45% + 15px);
+	line-height:140%;
+}
+
+@media(min-width:1280px) {
+	
+	.s29Teaser.s29_mobile .s29_image {
+		width:176px;
+	}
+	
+	.s29Teaser.s29_mobile .s29_title  {
+		margin-left:calc(176px + 15px);		
+	}
+}
+
+
+@media(max-width:1000px) {
+	
+	.s29Teaser.s29_mobile .s29_item {
+		float:none; clear:both;
+		width:100%; min-height:150px;
+		margin-right:0; margin-bottom:10px;
+	}
+	
+	.s29Teaser.s29_mobile .s29_image  {
+		width:150px;
+	}
+	
+	.s29Teaser.s29_mobile .s29_title {
+		margin-left:calc(150px + 15px);	margin-bottom:20px;	
+	}
+}
+
+@media(max-width:359px) {
+	.s29Teaser.s29_mobile .s29_item {
+		min-height:120px;
+	}
+	
+	.s29Teaser.s29_mobile .s29_image  {
+		width:120px;
+	}
+	
+	.s29Teaser.s29_mobile .s29_title {
+		margin-left:calc(120px + 15px);
+		font-size:14px;		
+	}
+}
+
+
+/* Job.ru */
+
+.s29JobRu.s29_240x400 {
+	width:240px; height:400px;
+}
+
+.s29JobRu.s29_240x400.s29_single {
+	background:url(../images/jobru-geo-240x400-single.png);
+}
+
+.s29JobRu.s29_240x400.s29_double {
+	background:url(../images/jobru-geo-240x400-double.png);
+}
+
+.s29JobRu.s29_240x400 .s29_section {
+	display:block;
+}
+
+.s29JobRu.s29_240x400 a {
+	display:table-cell;
+	width:240px;
+	text-align:center; vertical-align:middle;
+	text-decoration:none !important;
+}
+
+.s29JobRu.s29_240x400.s29_single a {
+	height:290px;
+	padding:10px 0 100px;
+}
+
+.s29JobRu.s29_240x400.s29_double a {
+	height:150px;
+	padding:20px 0 30px;
+}
+
+.s29JobRu.s29_240x400 span {
+	display:block;
+}
+
+.s29JobRu.s29_240x400 .s29_title {
+	color:#000;
+	font-family:Verdana, Arial, Sans-Serif; font-size:36px; font-weight:bold; font-style:normal;
+	text-decoration:none !important; line-height:120%;
+}
+
+.s29JobRu.s29_240x400.s29_single .s29_title {
+	margin-bottom:30px;
+}
+
+.s29JobRu.s29_240x400 .s29_subtitle {
+	color:#f47d1f;
+	font-family:Impact, Arial, Sans-Serif; font-size:30px; font-weight:normal; font-style:normal;
+	text-decoration:none !important; line-height:120%;
+}
+
+.s29JobRu.s29_240x400 .s29_subtitle.s29_big {
+	font-size:40px;
+}
+
+.s29JobRu.s29_240x400 .s29_subtitle.s29_small {
+	font-size:26px;
+}
+
+
+/* coronavirus banner */
+.crnBanner {
+	position:relative; width:100%; height:280px;
+}
+
+.crnLink {
+	display:block;
+	position:absolute; top:0; bottom:0; left:0; right:0;
+	border-bottom:none !important; text-decoration:none !important;
+}
+
+.crnTitle {
+	position:absolute; bottom:0; left:0; right:0;
+	padding:70px 50px 35px;
+	background-image:url(../images/newsfade-crn.png); background-position:top left; background-repeat:repeat-x;
+	color:#fff;
+	font-size:60px; font-family:Oswald, Arial, sans serif; font-weight:600; line-height:120%;
+}
+
+.crnTitle span {
+	text-shadow: 0 0 10px rgba(5,5,10,0.7);
+	border-bottom:rgba(255, 255, 255, 0) solid 2px !important;
+	transition: border-bottom-color 0.2s;
+}
+
+a.crnLink:hover .crnTitle span {
+	border-bottom-color:#fff !important;
+}
+
+@media (max-width:520px) {
+	.crnTitle {
+		padding:70px 28px 24px;
+		font-size:52px;
+	}
+}
+
+/*
+.crnBanner.crn_life24 .crnTitle {
+	color:#7f3253;
+}
+
+.crnBanner.crn_life24 .crnTitle span {
+	border-bottom-color:rgba(127, 50, 83, 0) !important;	
+}
+
+.crnBanner.crn_life24 a.crnLink:hover .crnTitle span {
+	border-bottom-color:rgba(127, 50, 83, 1) !important;	
+}
+*/

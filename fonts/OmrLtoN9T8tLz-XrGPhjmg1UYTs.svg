@@ -1,0 +1,12 @@
+<svg width="16" xmlns="http://www.w3.org/2000/svg" height="12" viewBox="0 0 16 12" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 16 12">
+<switch>
+<g>
+<g>
+<path fill="#0d4ba0" d="m0,0h16v12h-16z"/>
+<path fill="#ed1c2e" d="m0,0h16v6h-16z"/>
+<path fill="#fff" d="M8.75,6 0,12 0,0z"/>
+<image width="6" height="6" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAACXBIWXMAAAsSAAALEgHS3X78AAAA GXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAH5JREFUeNpiYMAH/n18zXFxWUvG tp64o7dW9vqAxFjAEk9vsR//8G76viNvGdzkL3cBhbYwgySMZX6UbTrx1vHxk+cMkrycn2Jzg76B dTzgEpFxFL1/ikVY8Tcr83eOT//+8jOCJL5+fc95/sza+P9cQuJf37y/YW0dsAogwAA+8DNgn9vW aQAAAABJRU5ErkJggg==" transform="translate(0 3)"/>
+</g>
+</g>
+</switch>
+</svg>

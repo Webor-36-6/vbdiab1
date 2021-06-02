@@ -1,0 +1,265 @@
+﻿
+#s29SelectCityBox {
+	max-width:900px;
+	margin-bottom:45px;
+}
+
+
+#s29SelectCityBox .s29_search,
+#s29SelectCityBox .s29_result,
+#s29SelectCityBox .s29_cities {
+	display:none;
+}
+
+
+#s29SelectCityBox ul {
+	list-style:none;
+}
+
+/*
+#s29SelectCityBox > div > div > ul {
+	float:left;
+	width:33%;	
+	margin:0; padding:0;
+}
+*/
+
+#s29SelectCityBox > div > div > ul {
+	margin:0; padding:0;
+}
+
+#s29SelectCityBox h2 {
+	font-size:14px !important; font-weight:bold; letter-spacing:normal;
+}
+
+#s29SelectCityBox .s29_country h2 {
+	margin-top:0;
+	font-size:20px !important; font-weight:normal; letter-spacing:normal;
+}
+
+#s29SelectCityBox.s29_oneCountry .s29_country h2 {
+	font-size:14px;	font-weight:bold;
+}
+
+#s29SelectCityBox .s29_inactive {
+	color:#777;
+}
+
+
+/* секции - общее */
+
+#s29SelectCityBox .s29_country {
+	margin-top:30px;
+}
+
+#s29SelectCityBox.s29_oneCountry .s29_country {
+	margin-top:18px;
+}
+
+#s29SelectCityBox .s29_cities {
+	margin-top:18px;	
+}
+
+#s29SelectCityBox .s29_back {
+	clear:both;
+	padding-top:20px;
+	font-weight:bold;
+}
+
+
+/* выбор страны */
+
+#s29SelectCityBox header {
+	margin:7px 0 15px; padding-bottom:2px;
+	border-bottom:#d5d5d5 solid 1px;
+}
+
+#s29SelectCityBox header a {
+	display:inline-block;
+	width:130px;
+	margin:0 37px 12px 0;
+	font-weight:bold;
+}
+
+#s29SelectCityBox header a img {
+	position:relative;
+	top:4px;
+	margin-right:7px;
+}
+
+/* поиск */
+
+#s29SelectCityBox .s29_search input {
+	width:85%;
+	padding:4px;
+	border:solid 1px #000;
+	color:#000;
+	font-size:12px !important; font-family: Verdana;
+}
+
+#s29SelectCityBox .s29_search small {
+	display:block;
+	margin-top:4px;
+	color:#777;
+	font-size:11px; font-style:italic;
+}
+
+
+#s29SelectCityBox .s29_result .s29_part {
+	margin:12px 0 18px;
+}
+
+#s29SelectCityBox.s29_oneCountry .s29_result .s29_part {
+	margin-top:10px;
+}
+
+#s29SelectCityBox .s29_result .s29_notFound {
+	margin:18px 0;	
+}
+
+#s29SelectCityBox .s29_result .s29_part h3 {
+	padding:0; margin:0 0 3px;
+	font-size:11px; font-weight:bold; letter-spacing:normal; line-height:normal;
+}
+
+
+#s29SelectCityBox.s29_oneCountry .s29_result .s29_part h3 {
+	display:none;
+}
+
+
+#s29SelectCityBox .s29_result .s29_part ul {
+	margin:0; padding:0;
+/*	float:left;
+	width:29%;
+*/
+}
+
+#s29SelectCityBox .s29_result .s29_part ul li {
+	margin:0; padding:0;
+	line-height:19px;
+	-webkit-column-break-inside: avoid; -moz-column-break-inside:avoid; -moz-page-break-inside:avoid; page-break-inside: avoid; break-inside: avoid-column;
+}
+
+#s29SelectCityBox .s29_result .s29_part ul li small {
+	position:relative;
+	top:-4px;
+	font-size:11px;
+}
+
+#s29SelectCityBox .s29_result .s29_part ul li a.s29_bold {
+	font-weight:bold;
+}
+
+#s29SelectCityBox .s29_result .s29_part ul li span {
+	margin-left:7px; padding:3px 14px;
+	background-color:#e4e4e4;
+}
+
+#s29SelectCityBox .s29_result .s29_back {
+	padding-top:10px;
+}
+
+
+/* список регионов */
+
+#s29SelectCityBox .s29_country {
+	display:none;
+}
+
+#s29SelectCityBox .s29_country.s29_current {
+	display:block;
+}
+
+#s29SelectCityBox .s29_country > ul {
+	font-weight:bold;
+}
+
+#s29SelectCityBox .s29_country > ul ul {
+	margin:0 0 20px 20px; padding:0;
+	font-weight:normal; font-size:11px;
+}
+
+#s29SelectCityBox .s29_country li.s29_capital {
+	margin:7px 0 8px;
+}
+
+
+/* список городов региона */
+
+#s29SelectCityBox .s29_cities ul {
+	margin-top:0;
+}
+
+#s29SelectCityBox .s29_cities ul.s29_margin {
+	margin-top:28px;	
+}
+
+#s29SelectCityBox .s29_cities ul li {
+	margin:0 0 0 20px; padding:0;
+	line-height:19px;
+}
+
+#s29SelectCityBox .s29_cities li.s29_capital {
+	margin-bottom:9px;
+	font-weight:bold;
+}
+
+
+/* после обработки скриптом */
+
+#s29SelectCityBox.s29_js .s29_search {
+	display:block;
+}
+
+#s29SelectCityBox.s29_js .s29_country > ul {
+	margin:0;
+}
+
+#s29SelectCityBox.s29_js .s29_country > ul ul {
+	display:none;
+}
+
+#s29SelectCityBox.s29_js .s29_country > ul > li {
+	margin:0; padding:0;
+	line-height:19px;
+}
+
+#s29SelectCityBox.s29_js .s29_country > ul > li.s29_margin {
+	margin-top:19px;
+}
+
+
+/* колонки */
+
+#s29SelectCityBox.s29_twoCols ul.s29_maxTwoCols,
+#s29SelectCityBox.s29_twoCols ul.s29_maxThreeCols,
+#s29SelectCityBox.s29_twoCols .s29_result .s29_part ul {
+	column-count:2; -moz-column-count:2; -webkit-column-count:2;
+}
+
+#s29SelectCityBox.s29_threeCols ul.s29_maxTwoCols {
+	width:67%;
+	column-count:2; -moz-column-count:2; -webkit-column-count:2;
+}
+
+#s29SelectCityBox.s29_threeCols ul.s29_maxThreeCols,
+#s29SelectCityBox.s29_threeCols .s29_result .s29_part ul {
+	column-count:3; -moz-column-count:3; -webkit-column-count:3;
+}
+
+
+
+/* для всплывающего окна */
+
+#s29SelectCityBox.s29_popup {
+	width:700px;
+	margin:0 !important; padding:0 20px 10px !important;
+}
+
+#s29SelectCityBox > footer {
+	margin-top:20px; padding-top:9px;
+	border-top:#d5d5d5 solid 1px;
+	text-align:right;
+	font-weight:bold;
+}
